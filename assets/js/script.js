@@ -12,8 +12,8 @@ let days = [
   $("#currentDay").text(days[dayjs().day()] + ", " + dayjs().format('MMMM D, YYYY h:mm:ss A'));
   
   // Hold code until entire app has finished loading.
-  $(document).ready(function () {
-    // Maintain current time
+$(document).ready(function () {
+// Maintain current time
     setInterval(function() {
       $("#currentDay").text(days[dayjs().day()] + ", " + dayjs().format('MMMM D, YYYY h:mm:ss A'));
       timeTracker()
@@ -63,5 +63,4 @@ let days = [
     $("#18 .description").val(localStorage.getItem("17"));
     
     timeTracker()
-  
-  })
+})
